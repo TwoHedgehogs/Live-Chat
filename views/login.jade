@@ -1,22 +1,44 @@
 extends layout
 
 block content
-	a(href="/login/github") 使用Github登录
-	div#sign
-		div.user-list
-			div(class="panel panel-primary")
-				div(class="panel-heading")
-					span(class="glyphicon glyphicon-user")   Login
-				div(class="panel-body")
-					form(rol="from",method="post")
-						if error
-							div(class="alert alert-danger", role="alert")= error
-						if success
-							p= success
-						div.form-group
-							label(for="exampleInputEmail1") nickName
-							input(type="text", class="form-control", id="exampleInputEmail1", placeholder="nickName", name="nickName")
-						div.form-group
-							label(for="exampleInputPassword1") passWord
-							input(type="password", class="form-control", id="exampleInputPassword1", placeholder="passWord", name="passWord")
-							button(type="submit", class="btn btn-primary") Login
+	div(id="mq-login-title") Live-Chat
+	div#sign-box.sign-box
+		div#sign-left
+			h4.sign-left-title 第三方帐号登录
+			ul.login-button-sets
+				li.class-sn-github
+					a(href="/login/github")
+						span
+						span Github 帐号
+				li.class-sn-weibo
+					a
+						span
+						span 新浪微博帐号
+				li.class-sn-qq
+					a
+						span
+						span QQ 帐号
+
+		div#sign-step.sign-step
+			span.sign-step-title
+			span.sign-step-line
+			span.sign-step-text 或者
+		div#sign-right
+			h4.sign-right-title 帐号密码登录
+			div.sign-right-area
+				form(method="post")
+					if error
+						div(class="alert alert-danger", role="alert")= error
+					if success
+							p= success	
+					div.padder
+						div.sign-input
+							span.input
+								input(type="text", class="input01", placeholder="输入您的帐号", name="nickName")
+						div.sign-input
+							span.input
+								input(type="password", class="input01", placeholder="输入您的密码", maxlength="16", id="password", name="passWord")
+					div.middle-padder
+						input(type="submit", class="signin-btn", value="登  录")
+				div.bottom-padder
+					span 感谢您留步参与Smart QQ的试验

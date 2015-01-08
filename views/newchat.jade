@@ -31,10 +31,10 @@ block content
 
 	div.chat-list
 		div.user-name
-			div
-				div
-					span 个人信息
-				div
+			div(class="panel panel-success")
+				div(class="panel-heading")
+					span(class="glyphicon glyphicon-user")   个人信息
+				div(class="panel-body")
 					if user
 						img(id="gravatar" class="gravatar", src= user.head)
 						span(id="my-name")= user.name

@@ -1,0 +1,173 @@
+body {
+	background: #f6f6f6;
+}
+#mq-login-title {
+	position: relative;
+	margin: 62px auto 40px;
+	text-align: center;
+	font-size: 30px;
+	width: 500px;
+}
+
+#sign-box {
+	position: relative;
+	width: 700px;
+	margin: 0 auto;
+	height: 500px;
+}
+
+#sign-left {
+	width: 340px;
+	float: left;
+	text-align: center;
+	.sign-left-title {
+		color: #838383;
+		font-weight: 100;
+		font-size: 18px;
+		width: 200px;
+		margin: 0;
+		display: inline-block;
+		height: 40px;
+		margin-bottom: 15px;
+	}
+	.login-button-sets {
+		width: 150px;
+		margin: 0 auto;
+		li {
+			width: 120px;
+			float: left;
+			display: inline-block;
+			margin-top: 10px;
+			height: 32px;
+			border-radius:3px;
+		}
+		li.class-sn-github {
+			background-color:#333;
+		}
+		li.class-sn-github:hover {
+			background-color: #222;
+		}
+		li.class-sn-weibo {
+			background-color:rgb(233, 13, 36);
+		}
+		li.class-sn-weibo:hover {
+			background-color: rgb(255, 20, 50);
+		}
+		li.class-sn-qq {
+			background-color: rgb(0, 152, 230);
+		}
+		li.class-sn-qq:hover {
+			background-color: rgb(0, 200, 255);
+		}
+		a {
+			text-decoration: none;
+			color: white;
+			display: block;
+			width: 100%;
+			height: 100%;			
+			padding: 6px 12px;
+			font-weight: normal;
+			vertical-align: middle;
+			cursor: pointer;
+			font-size: 14px;
+			line-height: 1.5;
+		}
+	}
+}
+
+#sign-step {
+	float: left;
+	width: 1px;
+	margin:0 5px;
+	height: 345px;
+	position: relative;
+	.sign-step-line {
+		background: #E6E6E6;
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+	.sign-step-text {
+		background: #F6F6F6;
+		color: #b8b8b8;
+		position: absolute;
+		top: 40%;
+		padding: 3px 0;
+		width: 40px;
+		display: block;
+		left: -20px;
+		text-align: center;
+	}
+}
+
+#sign-right {
+	width: 240px;
+	float: left;
+	margin: 0 0 0 50px;
+	padding: 1px 17px;
+	.sign-right-title {
+		text-align: left;
+		margin: 0;
+		padding: 0;
+		font-size: 18px;
+		color: #838383;
+		font-weight: 100;
+		margin-bottom: 30px;
+	}
+	.sign-right-area {
+		margin-top: 0;
+		width: 296px;
+		float: left;
+		position: relative;
+		min-height: 253px;
+	}
+	.padder {
+		margin: 8px 0 0;
+		margin-top: 0;
+		.sign-input {
+			margin: 14px 0 0 0;
+			.input {
+				display: block;
+				.input01 {
+					border: 1px #ccc solid;
+					color: #868686;
+					font-size: 16px;
+					padding: 2px;
+					outline: 0;
+					-webkit-border-radius: 5px;
+					-khtml-border-radius: 5px;
+					-border-radius: 5px;
+					border-radius: 5px;
+					height: 34px;
+					width: 240px;
+					padding: 2px;
+					padding-left: 10px;
+				}
+				#password {
+					margin-top: 8px;
+				}
+			}
+		}
+	}
+	.middle-padder {
+		margin-top: 10px;
+		.signin-btn {
+			color: #fff;
+			font-size: 16px;
+			width: 124px;
+			background: url(../../../asserts/images/login_btn.png) no-repeat 0 0;
+			height: 36px;
+			border: 0;
+			text-align: center;
+			line-height: 20px;
+			cursor: pointer;
+		}
+	}
+	.bottom-padder {
+		width: 280px;
+		margin-top: 50px;
+		span {
+			color: #838383;
+		}
+	}
+}

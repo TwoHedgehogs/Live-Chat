@@ -7,6 +7,9 @@ User = require '../models/user.coffee'
 Chat = require '../models/chat.coffee'
 PersonalChat = require '../models/personalchat.coffee'
 
+router.get '/newchat', (req,res)->
+	res.render 'newchat'
+
  # GET home page.
 router.get '/', (req, res)->
 	allChats = null
